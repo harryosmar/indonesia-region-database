@@ -6,6 +6,17 @@ in [MongoDB](https://github.com/harryosmar/indonesia-region-database/tree/master
 docker-compose up -d
 ```
 
+Data Structures
+
+```
+- Country
+  - Province
+    - City
+      - District
+        -SubDistrict
+```
+
+
 ## links
 
 - https://github.com/ibnux/data-indonesia
