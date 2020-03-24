@@ -7,8 +7,8 @@ DROP TABLE IF EXISTS `Province`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Province`
 (
-    `id`         int(11) NOT NULL AUTO_INCREMENT,
-    `country_id` int(11) NOT NULL,
+    `id`         varchar(2) NOT NULL,
+    `country_id` varchar(1) NOT NULL,
     `name`       varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
     PRIMARY KEY (`id`),
     KEY `country_id_index` (`country_id`)
