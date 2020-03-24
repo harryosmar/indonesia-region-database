@@ -9,3 +9,4 @@ docker-compose up -d
 ## links
 
 - https://github.com/ibnux/data-indonesia
+- https://raw.githubusercontent.com/edwardsamuel/Wilayah-Administratif-Indonesia/master/mysql/indonesia.sql
