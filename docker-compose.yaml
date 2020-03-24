@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mongo:
+    image: mongo:4.2
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: username
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - ./.docker/mongo/:/docker-entrypoint-initdb.d/

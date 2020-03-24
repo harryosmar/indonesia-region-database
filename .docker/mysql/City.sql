@@ -1,0 +1,61 @@
+--
+-- Table structure for table `City`
+--
+
+DROP TABLE IF EXISTS `City`;
+/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `City`
+(
+    `id`         int(11) NOT NULL AUTO_INCREMENT,
+    `province_id` int(11) NOT NULL,
+    `name`       varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    PRIMARY KEY (`id`),
+    KEY `province_id_index` (`province_id`)
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 1
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_unicode_ci;
+
+INSERT INTO `City` (`id`, `province_id`, `name`)
+VALUES (3101, 31, 'KEPULAUAN SERIBU'),
+(3171, 31, 'JAKARTA SELATAN'),
+(3172, 31, 'JAKARTA TIMUR'),
+(3173, 31, 'JAKARTA PUSAT'),
+(3174, 31, 'JAKARTA BARAT'),
+(3175, 31, 'JAKARTA UTARA'),
+(3201, 32, 'BOGOR'),
+(3202, 32, 'SUKABUMI'),
+(3203, 32, 'CIANJUR'),
+(3204, 32, 'BANDUNG'),
+(3205, 32, 'GARUT'),
+(3206, 32, 'TASIKMALAYA'),
+(3207, 32, 'CIAMIS'),
+(3208, 32, 'KUNINGAN'),
+(3209, 32, 'CIREBON'),
+(3210, 32, 'MAJALENGKA'),
+(3211, 32, 'SUMEDANG'),
+(3212, 32, 'INDRAMAYU'),
+(3213, 32, 'SUBANG'),
+(3214, 32, 'PURWAKARTA'),
+(3215, 32, 'KARAWANG'),
+(3216, 32, 'BEKASI'),
+(3217, 32, 'BANDUNG BARAT'),
+(3218, 32, 'PANGANDARAN'),
+(3271, 32, 'BOGOR'),
+(3272, 32, 'SUKABUMI'),
+(3273, 32, 'BANDUNG'),
+(3274, 32, 'CIREBON'),
+(3275, 32, 'BEKASI'),
+(3276, 32, 'DEPOK'),
+(3277, 32, 'CIMAHI'),
+(3278, 32, 'TASIKMALAYA'),
+(3279, 32, 'BANJAR'),
+(3601, 36, 'KABUPATEN PANDEGLANG'),
+(3602, 36, 'KABUPATEN LEBAK'),
+(3603, 36, 'KABUPATEN TANGERANG'),
+(3604, 36, 'KABUPATEN SERANG'),
+(3671, 36, 'KOTA TANGERANG'),
+(3672, 36, 'KOTA CILEGON'),
+(3673, 36, 'KOTA SERANG'),
+(3674, 36, 'KOTA TANGERANG SELATAN');
